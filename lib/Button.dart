@@ -16,7 +16,7 @@ class Button extends StatelessWidget {
   Widget build(BuildContext context) {
     return FloatingActionButton(
       onPressed: callback,
-      shape: CircleBorder(),
+      shape: const CircleBorder(),
       backgroundColor: const Color.fromRGBO(92, 87, 97, 1),
       child: Text(
         operation,

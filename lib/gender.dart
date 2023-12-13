@@ -27,20 +27,17 @@ class _GenderState extends State<Gender> {
           color: Theme.of(context).primaryColorLight,
           borderRadius: BorderRadius.circular(20),
         ),
-        child: Padding(
-          padding: EdgeInsets.all(35),
-          child: Center(
-            child: Column(
-              children: [
-                Icon(
-                  widget.icon,
-                  size: 80,
-                  color: Theme.of(context).highlightColor,
-                ),
-                Text(widget.text,
-                    style: Theme.of(context).textTheme.titleMedium),
-              ],
-            ),
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Icon(
+                widget.icon,
+                size: 80,
+                color: Theme.of(context).highlightColor,
+              ),
+              Text(widget.text, style: Theme.of(context).textTheme.titleMedium),
+            ],
           ),
         ),
       ),

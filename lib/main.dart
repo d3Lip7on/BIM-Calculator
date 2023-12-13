@@ -18,18 +18,18 @@ class MyApp extends StatelessWidget {
         primaryColorDark: const Color.fromRGBO(39, 30, 46, 1),
         highlightColor: Colors.white,
         textTheme: const TextTheme(
-            titleMedium: TextStyle(
-              fontSize: 16,
-              color: Colors.white,
-            ),
-            titleSmall: TextStyle(
-              fontSize: 10,
-              color: Colors.white,
-            ),
-            titleLarge:
-                TextStyle(fontSize: 50, color: Colors.white, height: 0.8)),
+          titleMedium: TextStyle(
+            fontSize: 16,
+            color: Colors.white,
+          ),
+          titleSmall: TextStyle(
+            fontSize: 10,
+            color: Colors.white,
+          ),
+          titleLarge: TextStyle(fontSize: 50, color: Colors.white, height: 0.8),
+        ),
       ),
-      home: HomePage(),
+      home: const HomePage(),
     );
   }
 }

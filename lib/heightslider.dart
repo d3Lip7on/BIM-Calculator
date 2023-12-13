@@ -12,22 +12,19 @@ class _HeightSliderState extends State<HeightSlider> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        color: Theme.of(context).primaryColorLight,
-        borderRadius: BorderRadius.circular(20),
-      ),
-      child: Padding(
-        padding: const EdgeInsets.all(30),
+    return Expanded(
+      child: Container(
+        decoration: BoxDecoration(
+          color: Theme.of(context).primaryColorLight,
+          borderRadius: BorderRadius.circular(20),
+        ),
         child: Center(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Text(
                 'HEIGHT',
                 style: Theme.of(context).textTheme.titleMedium,
-              ),
-              SizedBox(
-                height: 15,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -37,9 +34,6 @@ class _HeightSliderState extends State<HeightSlider> {
                       style: Theme.of(context).textTheme.titleLarge),
                   Text('CM', style: Theme.of(context).textTheme.titleSmall),
                 ],
-              ),
-              SizedBox(
-                height: 15,
               ),
               Slider(
                   min: 0,
